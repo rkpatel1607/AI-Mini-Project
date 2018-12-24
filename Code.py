@@ -1,6 +1,7 @@
 import nltk
 from sklearn.svm import LinearSVC
 from nltk.classify.scikitlearn import SklearnClassifier
+from sklearn.linear_model import LogisticRegression
 import xlwt
 
 
@@ -27,6 +28,10 @@ def main():
     # Linear Support vector classification
     classif = SklearnClassifier(LinearSVC())
     classif.train(train_set)
+    
+    # Logistic Regression method
+    # classif = SklearnClassifier(LogisticRegression())
+    # classif.train(train_set)
 
     dialog_Act_A = []
     print("Accuracy : ", nltk.classify.accuracy(classif, test_set) * 100)
