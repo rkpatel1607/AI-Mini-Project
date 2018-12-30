@@ -1,4 +1,6 @@
-# AI-Mini-Project
+Question Classification
+----------------------
+AI-Mini-Project
 
 1. Created a file named as "code.py" to implement the question classifier.
 2. Train the model by using supervised classification. Identify question and statement by using dialogue act tagging implemented by making use of nps chat corpus in nltk . 
